@@ -1,5 +1,5 @@
 # Proje Tanımı
-Eğitim videoların bulunabileceği bir web uygulamasıdır.Seçilen eğitim kategorisine göre videolar kullanıcıların erişimine sunulur.
+Eğitim videolarının bulunabileceği bir web uygulamasıdır.Seçilen eğitim kategorisine göre videolar kullanıcıların erişimine sunulur.
 # Temel Özellikler
 *	Sisteme giriş 
 *	Web uygulamasını tanıtan bir anasayfa
