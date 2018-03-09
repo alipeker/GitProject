@@ -12,3 +12,8 @@
 * Kübra KÖKEN: Task 5
 * Eray AYDEMİR : Testlerin yapılması
 
+# Teknolojiler
+* HTML5
+* CSS3
+* JAVASCRIPT
+
