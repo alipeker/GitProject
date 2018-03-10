@@ -15,5 +15,5 @@
 # Teknolojiler
 * HTML5
 * CSS3
-* JAVASCRIPT
+* JAVASCRIPT2
 
