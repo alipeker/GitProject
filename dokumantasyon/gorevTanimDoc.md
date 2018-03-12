@@ -17,3 +17,14 @@
 * CSS3
 * JAVASCRIPT
 
+# Temel Özelliklerin Durum Tablosu
+
+| Özellik No 	| Özellik Başlığı  | Geliştiren Kişi | Test Eden   | Durum |
+| :-----------| :----------------| :---------------| :-----------| :-----|
+|Feat-1      	| Anasayfa       	 | Ali PEKER       | Eray AYDEMİR| Geliştiriliyor|
+|Feat-2       | Hakkında,İletişim | Ekrem CANDEMİR | Eray AYDEMİR |Geliştiriliyor |
+|Feat-3       | Kategoriler      	| Kübra KÖKEN    | Eray AYDEMİR | Test Ediliyor
+|Feat-4       | Sisteme Giriş      |	Pınar IRMAK  | Eray AYDEMİR |Geliştiriliyor
+
+# Kullanılan Git Akışı
+![alt text](https://github.com/alipeker/GitProject/blob/master/dokumantasyon/git_workflow.png "Git Akışı")
