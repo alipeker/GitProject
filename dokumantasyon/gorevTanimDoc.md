@@ -17,3 +17,6 @@
 * CSS3
 * JAVASCRIPT
 
+# Temel Özelliklerin Durum Tablosu
+![alt text](https://github.com/alipeker/GitProject/blob/master/dokumantasyon/durum.png "Durum Tablosu")
+
