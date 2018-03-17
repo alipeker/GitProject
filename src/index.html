@@ -126,29 +126,7 @@
   <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery.min.js"><\/script>')</script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb"
     crossorigin="anonymous"></script>
-  <script language="javascript">
 
-    // The system login page will be opened when we click on the manager and customer buttons
-    //This for customer login page
-    var modal1 = document.getElementById('id01');//When click to button,open modal1 that is login page 
-    window.onclick = function (event) {
-      if (event.target == modal1) {
-        modal1.style.display = "none";
-      }
-    }
-
-
-    // Password and username codes for Customer
-    function check1(form) {
-
-      if (form.uname.value == "myuserid" && form.psw.value == "a") {//user name: pınar@gmail.com and password:pnr
-        window.open('customerpage1.html')//if code return true customerpage1 will open
-      }
-      else {
-        alert("Error Password or Username")//if password or username wrong, it will alert us
-      }
-    }
-  </script>
 </body>
 
 </html>
