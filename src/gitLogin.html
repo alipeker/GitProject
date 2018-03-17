@@ -1,0 +1,115 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Yazılım Eğitimi</title>
+    <link rel="stylesheet" href="gitLogin.css">
+  </head>
+
+<!-- background image
+ --><body background="back3.jpg">
+<div  class="container">
+<h2>Yazılım Login System Page</h2>
+<!-- Two input buttons, manager and customer
+ -->
+<button onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Login Customer</button>
+<button onclick="document.getElementById('id02').style.display='block'" style="width:auto;">Login Manager</button>
+
+
+<!-- First login page codes; name and password belongs to Customer
+ --><div id="id01" class="modal1">
+  
+  <form class="modal1-content animate" action="/action_page.php">
+    <div class="imgcontainer">
+      <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close modal1">&times;</span>
+      <img src="logo.png" alt="Avatar" class="avatar">
+    </div>
+
+    <div class="container">
+      <label><b>Username</b></label>
+      <input type="text" id="username1"  placeholder="Enter Username" name="uname" required>
+
+      <label><b>Password</b></label>
+      <input type="password" id="password1"  placeholder="Enter Password" name="psw" required>
+        
+      <button type="submit" onclick="check1(this.form)" >Login</button>
+      <input type="checkbox" checked="checked"> Remember me
+    </div>
+
+    <div class="container" style="background-color:#f1f1f1">
+      <button type="button" id="submit1" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+      <span class="psw">Forgot <a href="#">password?</a></span>
+    </div>
+  </form>
+</div>
+
+
+<!-- Second login page codes; name and password belongs to Manager
+ --><div id="id02" class="modal2">
+  
+  <form class="modal1-content animate" action="/action_page.php">
+    <div class="imgcontainer">
+      <span onclick="document.getElementById('id02').style.display='none'" class="close" title="Close modal1">&times;</span>
+      <img src="logo.png" alt="Avatar" class="avatar">
+    </div>
+
+    <div class="container">
+      <label><b>Username</b></label>
+      <input type="text" id="username2" placeholder="Enter Username" name="uname" required>
+
+      <label><b>Password</b></label>
+      <input type="password" id="password2" placeholder="Enter Password" name="psw" required>
+        
+      <button type="submit" id="submit2" onclick="check2(this.form)">Login</button>
+      <input type="checkbox" checked="checked"> Remember me
+    </div>
+
+    <div class="container" style="background-color:#f1f1f1">
+      <button type="button" onclick="document.getElementById('id02').style.display='none'" class="cancelbtn">Cancel</button>
+      <span class="psw">Forgot <a href="#">password?</a></span>
+    </div>
+  </form>
+</div>
+</div>
+
+<script language="javascript">
+
+// The system login page will be opened when we click on the manager and customer buttons
+//This for customer login page
+var modal1 = document.getElementById('id01');//When click to button,open modal1 that is login page 
+window.onclick = function(event) {
+    if (event.target == modal1) {
+        modal1.style.display = "none";
+    }
+}
+//This for manager login page
+var modal2 = document.getElementById('id02');//When click to button,open modal2 that is login page 
+window.onclick = function(event) {
+    if (event.target == modal2) {
+        modal2.style.display = "none";
+    }
+}
+
+
+// Password and username codes for Customer
+function check1(form){ 
+
+                if(form.uname.value == "myuserid" && form.psw.value == "a") {//user name: pınar@gmail.com and password:pnr
+                    window.open('customerpage1.html')//if code return true customerpage1 will open
+                }
+                else {
+                    alert("Error Password or Username")//if password or username wrong, it will alert us
+                }
+            }
+            function check2(form){ 
+
+                if(form.uname.value == "myuserid" && form.psw.value == "b") {//same as above customer code but for this manager
+                    window.open('managerpage1.html')
+                }
+                else {
+                    alert("Error Password or Username")
+                }
+            }
+</script>
+
+</body>
+</html>
