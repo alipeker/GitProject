@@ -10,83 +10,125 @@
 
     <title>Round About - Start Bootstrap Template</title>
 
-    <!-- Bootstrap core CSS -->
-    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n"
+        crossorigin="anonymous"></script>
 
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ"
+        crossorigin="anonymous">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn"
+        crossorigin="anonymous"></script>
     <!-- Custom styles for this template -->
     <link href="round-about.css" rel="stylesheet">
+    <style>
+        #menu {
+            background-color: #16385dfb;
+        }
 
+        #menu:hover {
+            background-color: #16385d;
+        }
+
+        #one-slide {
+            width: 100%;
+            height: 550px;
+            background-image: url("http://deafrica.org/wp-content/uploads/2017/03/elearning.jpg");
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: 50% 44%;
+        }
+
+        ​ .menuitem {
+            padding-right: 10px;
+        }
+    </style>
 </head>
 
 <body>
 
-
-
-<!-- Page Content -->
-<div class="container">
-
-    <!-- Introduction Row -->
-    <h1 class="my-4">Hakkımızda
-    </h1>
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint, explicabo dolores ipsam aliquam inventore corrupti eveniet quisquam quod totam laudantium repudiandae obcaecati ea consectetur debitis velit facere nisi expedita vel?</p>
-
-    <!-- Team Members Row -->
-    <div class="row">
-        <div class="col-lg-12">
-            <h2 class="my-4">Biz kimiz</h2>
+    <nav class="navbar navbar-toggleable-md navbar-inverse fixed-top" id="menu">
+        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse"
+            aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <a class="navbar-brand" href="/eogrenme/index.html">
+            <img width="100px" class="second-slide" src="https://elearningindustry.com/wp-content/uploads/2015/09/using-e-learning-technologies-improve-educational-quality-language-teaching.png"
+                alt="second slide">
+        </a>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="/eogrenme/hakkimizda.html">Hakkımızda</a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="/eogrenme/iletisim.html">İletişim</a>
+                </li>
+            </ul>
+            <form class="navbar-form navbar-right" type="post">
+                <div class="row">
+                    <div style="padding-right:20px;" class="menuitem">
+                        <a class="btn btn-success" href="login.html">Giriş Yap</a>
+                    </div>
+                </div>
+            </form>
         </div>
-        <div class="col-lg-4 col-sm-6 text-center mb-4">
-            <img class="rounded-circle img-fluid d-block mx-auto" src="http://placehold.it/200x200" alt="">
-            <h3>Kübra Köken
-                <small>Job Title</small>
-            </h3>
-            <p>What does this team member to? Keep it short! This is also a great spot for social links!</p>
-        </div>
-        <div class="col-lg-4 col-sm-6 text-center mb-4">
-            <img class="rounded-circle img-fluid d-block mx-auto" src="http://placehold.it/200x200" alt="">
-            <h3>Pınar Irmak
-                <small>Job Title</small>
-            </h3>
-            <p>What does this team member to? Keep it short! This is also a great spot for social links!</p>
-        </div>
-        <div class="col-lg-4 col-sm-6 text-center mb-4">
-            <img class="rounded-circle img-fluid d-block mx-auto" src="http://placehold.it/200x200" alt="">
-            <h3>Ali Peker
-                <small>Job Title</small>
-            </h3>
-            <p>What does this team member to? Keep it short! This is also a great spot for social links!</p>
-        </div>
-        <div class="col-lg-4 col-sm-6 text-center mb-4">
-            <img class="rounded-circle img-fluid d-block mx-auto" src="http://placehold.it/200x200" alt="">
-            <h3>Ekrem Candemir
-                <small>Job Title</small>
-            </h3>
-            <p>What does this team member to? Keep it short! This is also a great spot for social links!</p>
-        </div>
-        <div class="col-lg-4 col-sm-6 text-center mb-4">
-            <img class="rounded-circle img-fluid d-block mx-auto" src="http://placehold.it/200x200" alt="">
-            <h3>Eray Aydemir
-                <small>Job Title</small>
-            </h3>
-            <p>What does this team member to? Keep it short! This is also a great spot for social links!</p>
+    </nav>
+
+    <!-- Page Content -->
+    <div class="container" style="top:70px;">
+
+        <!-- Introduction Row -->
+        <h1 class="my-4">Hakkımızda</h1>
+
+        <!-- Team Members Row -->
+        <div class="row">
+            <div class="col-lg-12">
+                <h2 class="my-4">Biz kimiz</h2>
+            </div>
+            <div class="col-lg-4 col-sm-6 text-center mb-4">
+                <h3>Ali Peker
+                    <small>Takım Lideri</small>
+                </h3>
+            </div>
+            <div class="col-lg-4 col-sm-6 text-center mb-4">
+                <h3>Ekrem Candemir
+                    <small>Takım Lideri Yrd.</small>
+                </h3>
+            </div>
+            <div class="col-lg-4 col-sm-6 text-center mb-4">
+                <h3>Kübra Köken
+                    <small>Geliştirici</small>
+                </h3>
+            </div>
+            <div class="col-lg-4 col-sm-6 text-center mb-4">
+                <h3>Pınar Irmak
+                    <small>Geliştirici</small>
+                </h3>
+            </div>
+
+            <div class="col-lg-4 col-sm-6 text-center mb-4">
+                <h3>Eray Aydemir
+                    <small>Testçi</small>
+                </h3>
+            </div>
+
         </div>
 
-    </div>
-
-</div>
-<!-- /.container -->
-
-<!-- Footer -->
-<footer class="py-5 bg-dark">
-    <div class="container">
-        <p class="m-0 text-center text-white">Copyright &copy; Your Website 2018</p>
     </div>
     <!-- /.container -->
-</footer>
 
-<!-- Bootstrap core JavaScript -->
-<script src="vendor/jquery/jquery.min.js"></script>
-<script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <!-- Footer -->
+    <footer class="py-5 bg-dark">
+        <div class="container">
+            <p class="m-0 text-center text-white">Copyright &copy; Your Website 2018</p>
+        </div>
+        <!-- /.container -->
+    </footer>
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 
 </body>
 

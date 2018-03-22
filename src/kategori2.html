@@ -9,22 +9,105 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <style>
+        .sidenav {
+            height: 100%;
+            width: 0;
+            position: fixed;
+            z-index: 1;
+            top: 0;
+            left: 0;
+            background-color: #111;
+            overflow-x: hidden;
+            transition: 0.5s;
+            padding-top: 60px;
+        }
+
+        .sidenav a {
+            padding: 8px 8px 8px 32px;
+            text-decoration: none;
+            font-size: 16px;
+            color: #818181;
+            display: block;
+            transition: 0.3s;
+        }
+
+        .sidenav a:hover {
+            color: #f1f1f1;
+        }
+
+
+        @media screen and (max-height: 450px) {
+            .sidenav {
+                padding-top: 15px;
+            }
+            .sidenav a {
+                font-size: 18px;
+            }
+        }
+
+        #mySidenav {
+            width: 250px;
+        }
+    </style>
+
+    <script>
+        function getCookie(cname) {
+            var name = cname + "=";
+            var ca = document.cookie.split(';');
+            for (var i = 0; i < ca.length; i++) {
+                var c = ca[i];
+                while (c.charAt(0) == ' ') {
+                    c = c.substring(1);
+                }
+                if (c.indexOf(name) == 0) {
+                    return c.substring(name.length, c.length);
+                }
+            }
+            return "";
+        }
+
+        function checkCookie() {
+            var login = getCookie("login");
+            if (login != "true") {
+                location.href = "/eogrenme/login.html";
+            }
+        }
+
+        checkCookie();
+
+        function removeCookie() {
+            document.cookie = "login=false;";
+            location.href = "/eogrenme/index.html";
+        }
+    </script>
 </head>
 
 <div class="container-fluid">
+
     <div class="row">
 
-        <div class="col-md-2">
-            <ul style="display:block;padding-top:50px;">
-                <li><a href="kategori1.html">Git Eğitimi</a></li>
-                <li><a href="kategori2.html">Agile Eğitimi</a></li>
-                <li><a href="kategori3.html">Machine Learning Eğitimi</a></li>
-                <li><a href="kategori4.html">Web Services Eğitimi</a></li>
-                <li><a href="kategori5.html">React Redux Eğitimi</a></li>
-            </ul>
+
+        <div class="col-md-3">
+
+            <div id="mySidenav" class="sidenav">
+                <a class="navbar-brand" href="/eogrenme/index.html">
+                    <img width="100px" src="https://elearningindustry.com/wp-content/uploads/2015/09/using-e-learning-technologies-improve-educational-quality-language-teaching.png"
+                        alt="second slide">
+                </a>
+                <a style="padding-top:80px;" href="/eogrenme/kategori1.html">Git Eğitimi</a>
+                <a href="/eogrenme/kategori2.html">Agile Eğitimi</a>
+                <a href="/eogrenme/kategori3.html">Machine Learning Eğitimi</a>
+                <a href="/eogrenme/kategori4.html">Web Services Eğitimi</a>
+                <a href="/eogrenme/kategori5.html">React Redux Eğitimi</a>
+                <div style="padding: 8px 8px 8px 32px;">
+                    <button style="color: #ff0505;background-color: #111;" onclick="removeCookie();">Çıkış Yap</button>
+                </div>
+            </div>
+
         </div>
 
-        <div class="col-md-10">
+        <div class="col-md-9">
             <div class="row">
                 <div class="col-sm-4">
                     <iframe src="https://www.youtube.com/embed/dfR6UBEBVvo" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>

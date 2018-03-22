@@ -2,7 +2,7 @@
 <html>
 
 <head>
-    <meta charset="utf-8">
+  <meta charset="utf-8">
   <title>Yazılım Eğitimi</title>
   <link rel="stylesheet" href="gitLogin.css">
 </head>
@@ -12,8 +12,11 @@
 
 <body background="images.jpg">
   <div class="container">
+    <a href="index.html">
       <img width="200px" class="second-slide" src="https://elearningindustry.com/wp-content/uploads/2015/09/using-e-learning-technologies-improve-educational-quality-language-teaching.png"
-      alt="second slide"><br />
+        alt="second slide">
+      <br />
+    </a>
     <!-- Two input buttons, manager and customer
  -->
     <button onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Giriş Yap</button>
@@ -21,11 +24,13 @@
  -->
     <div id="id01" class="modal1">
 
-      <form class="modal1-content animate" action="/action_page.php">
+      <form class="modal1-content animate">
         <div class="imgcontainer">
           <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close modal1">&times;</span>
-          <img src="https://elearningindustry.com/wp-content/uploads/2015/09/using-e-learning-technologies-improve-educational-quality-language-teaching.png"
-            alt="Avatar" class="avatar">
+          <a href="/eogrenme/index.html">
+            <img src="https://elearningindustry.com/wp-content/uploads/2015/09/using-e-learning-technologies-improve-educational-quality-language-teaching.png"
+              alt="Avatar" class="avatar">
+          </a>
         </div>
 
         <div class="container">
@@ -39,12 +44,11 @@
           </label>
           <input type="password" id="password1" placeholder="Şifreni gir" name="psw" required>
 
-          <button type="submit" onclick="check1(this.form)">Giriş Yap</button>
+          <button type="button" onclick="check1(this.form)">Giriş Yap</button>
           <input type="checkbox" checked="checked"> Beni hatırla
         </div>
 
         <div class="container" style="background-color:#f1f1f1">
-          <button type="button" id="submit1" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">İptal</button>
           <span class="psw">Şifremi Unuttum
             <a href="#">şifre?</a>
           </span>
@@ -69,12 +73,17 @@
     // Password and username codes for Customer
     function check1(form) {
 
-      if (form.uname.value == "kodluyoruz" && form.psw.value == "123") {//user name: pınar@gmail.com and password:pnr
-        window.open('kategori1.html')//if code return true customerpage1 will open
+      if (document.getElementById("username1").value == "kodluyoruz" && document.getElementById("password1").value == "123") {//user name: pınar@gmail.com and password:pnr
+        setCookie();
+        location.href = "/eogrenme/kategori1.html";
       }
       else {
         alert("Error Password or Username")//if password or username wrong, it will alert us
       }
+    }
+
+    function setCookie() {
+      document.cookie = "login=true;";
     }
   </script>
 
