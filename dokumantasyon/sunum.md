@@ -1,0 +1,1 @@
+sunum slaytı https://prezi.com/p/44em6nowef0w/
